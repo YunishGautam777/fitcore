@@ -1,0 +1,14 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<aside class="sidebar">
+    <a class="brand" href="${pageContext.request.contextPath}/admin/dashboard">FIT<span style="color:#fff">CORE</span> ADMIN</a>
+    <a href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a>
+    <a href="${pageContext.request.contextPath}/admin/members">Members</a>
+    <a href="${pageContext.request.contextPath}/admin/trainers">Trainers</a>
+    <a href="${pageContext.request.contextPath}/admin/sessions">Classes / Sessions</a>
+    <a href="${pageContext.request.contextPath}/admin/equipment">Equipment</a>
+    <a href="${pageContext.request.contextPath}/admin/payments">Payments</a>
+    <a href="${pageContext.request.contextPath}/admin/approvals">Approvals</a>
+    <a href="${pageContext.request.contextPath}/admin/announcements">Announcements</a>
+    <a href="${pageContext.request.contextPath}/admin/reports">Reports</a>
+    <a href="${pageContext.request.contextPath}/logout" style="margin-top:2rem;color:var(--danger)">Logout</a>
+</aside>

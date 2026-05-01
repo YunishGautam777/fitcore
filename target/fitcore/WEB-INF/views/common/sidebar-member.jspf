@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<aside class="sidebar">
+    <a class="brand" href="${pageContext.request.contextPath}/member/dashboard">FIT<span style="color:#fff">CORE</span></a>
+    <a href="${pageContext.request.contextPath}/member/dashboard">Dashboard</a>
+    <a href="${pageContext.request.contextPath}/member/sessions">Browse Classes</a>
+    <a href="${pageContext.request.contextPath}/member/attendance">My Attendance</a>
+    <a href="${pageContext.request.contextPath}/member/diet">My Diet Plan</a>
+    <a href="${pageContext.request.contextPath}/member/payments">Payments</a>
+    <a href="${pageContext.request.contextPath}/member/search">Search</a>
+    <a href="${pageContext.request.contextPath}/member/bmi.jsp">BMI Calculator</a>
+    <a href="#" onclick="alert('Wishlist count: ' + (document.getElementById('wishlistCount').textContent));return false;">
+        Wishlist (<span id="wishlistCount">0</span>)
+    </a>
+    <a href="${pageContext.request.contextPath}/logout" style="margin-top:2rem;color:var(--danger)">Logout</a>
+</aside>
