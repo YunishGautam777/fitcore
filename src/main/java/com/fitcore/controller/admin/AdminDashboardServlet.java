@@ -11,7 +11,7 @@ import java.sql.SQLException;
 @WebServlet("/admin/dashboard")
 public class AdminDashboardServlet extends HttpServlet {
 
-    private final MemberDAO memberDAO = new MemberDAO();
+    private final MemberDAO memberDAO = new MemberDAO(); //finm mrmber DAO
     private final PaymentDAO paymentDAO = new PaymentDAO();
     private final UserDAO userDAO = new UserDAO();
     private final AnnouncementDAO announcementDAO = new AnnouncementDAO();
