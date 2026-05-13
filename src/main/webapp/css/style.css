@@ -32,7 +32,7 @@
     --warning:   #F39C12;  /* Warning state color (yellow) */
     --danger:    #E74C3C;  /* Danger/error color (red) */
     --text:      #F5F5F7;  /* Primary text color */
-    --muted:     #9B9BA1;  /* Muted text color */
+    --muted:     #a0a0b0;  /* Gray text color */
     --radius:    10px;     /* Border radius for rounded corners */
     --shadow:    0 4px 18px rgba(0,0,0,.4);  /* Box shadow */
 }
