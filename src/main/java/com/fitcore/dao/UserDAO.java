@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO {
-
+//DAO ASA
     public User findByUsername(String username) throws SQLException {
         String sql = "SELECT * FROM UserAccounts WHERE username = ?";
         try (Connection con = DBUtil.getConnection();
