@@ -10,7 +10,7 @@
     --warning:   #F39C12;  /* Warning state color (yellow) */
     --danger:    #E74C3C;  /* Danger/error color (red) */
     --text:      #F5F5F7;  /* Primary text color */
-    --muted:     #a0a0b0;  /* Gray text color */
+    --muted:     #ababca;  /* Gray text color */
     --radius:    10px;     /* Border radius for rounded corners */
     --shadow:    0 4px 18px rgba(0,0,0,.4);  /* Box shadow */
 }
@@ -26,7 +26,6 @@ html, body {
     min-height: 100vh;
 }
 
-/* Typography styles */
 h1, h2, h3, h4 {
     font-family: 'Bebas Neue', 'Impact', sans-serif;
     letter-spacing: 0.5px;
@@ -54,6 +53,7 @@ a:hover { color: var(--secondary); }
 .text-muted  { color: var(--muted); }
 .text-center { text-align: center; }
 .right       { text-align: right; }
+
 
 /* ---------- Top Navigation (Public Pages) ---------- */
 .topnav {
