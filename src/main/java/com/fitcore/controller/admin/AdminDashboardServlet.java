@@ -7,7 +7,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.sql.SQLException;
-
 @WebServlet("/admin/dashboard")
 public class AdminDashboardServlet extends HttpServlet {
 
