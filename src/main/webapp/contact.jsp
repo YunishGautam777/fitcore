@@ -44,17 +44,47 @@
               loading="lazy"></iframe>
         </div>
 
-        <div class="card">
-            <h3>Send a Message</h3>
-            <form method="post" action="${pageContext.request.contextPath}/contact-submit">
-                <div class="form-group"><label>Name</label><input type="text" name="name" required></div>
-                <div class="form-group"><label>Email</label><input type="email" name="email" required></div>
-                <div class="form-group"><label>Subject</label><input type="text" name="subject"></div>
-                <div class="form-group"><label>Message</label><textarea name="message" rows="5" required></textarea></div>
-                <button class="btn">Send</button>
-            </form>
+       <!-- Contact card section -->
+<div class="card">
+    
+    <!-- Form heading -->
+    <h3>Send a Message</h3>
+
+    <!-- Contact form -->
+    <form method="post" action="${pageContext.request.contextPath}/contact-submit">
+        
+        <!-- Name input field -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
         </div>
-    </div>
+
+        <!-- Email input field -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Subject input field (optional) -->
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+        </div>
+
+        <!-- Message textarea -->
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn">
+            Send
+        </button>
+
+    </form>
+
+</div>
 </main>
 
 <footer class="footer"><div class="container"><strong>FitCore Gym</strong> &copy; 2026</div></footer>
