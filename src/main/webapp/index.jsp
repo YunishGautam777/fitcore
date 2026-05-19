@@ -9,17 +9,48 @@
 </head>
 <body>
 
+<!-- Top navigation bar -->
 <header class="topnav">
+
     <div class="container inner">
-        <a class="brand" href="${pageContext.request.contextPath}/">FIT<span>CORE</span></a>
+
+        <!-- Website logo / brand name -->
+        <a class="brand" href="${pageContext.request.contextPath}/">
+            FIT<span>CORE</span>
+        </a>
+
+        <!-- Navigation menu links -->
         <nav class="nav-links">
-            <a href="${pageContext.request.contextPath}/">Home</a>
-            <a href="${pageContext.request.contextPath}/about.jsp">About</a>
-            <a href="${pageContext.request.contextPath}/contact.jsp">Contact</a>
-            <a href="${pageContext.request.contextPath}/login.jsp">Login</a>
-            <a href="${pageContext.request.contextPath}/register.jsp" class="btn btn-sm">Join Now</a>
+
+            <!-- Home page -->
+            <a href="${pageContext.request.contextPath}/">
+                Home
+            </a>
+
+            <!-- About page -->
+            <a href="${pageContext.request.contextPath}/about.jsp">
+                About
+            </a>
+
+            <!-- Contact page -->
+            <a href="${pageContext.request.contextPath}/contact.jsp">
+                Contact
+            </a>
+
+            <!-- Login page -->
+            <a href="${pageContext.request.contextPath}/login.jsp">
+                Login
+            </a>
+
+            <!-- Registration / Join button -->
+            <a href="${pageContext.request.contextPath}/register.jsp" class="btn btn-sm">
+                Join Now
+            </a>
+
         </nav>
+
     </div>
+
 </header>
 
 <section class="hero">
