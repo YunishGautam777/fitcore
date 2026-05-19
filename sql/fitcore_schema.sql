@@ -206,7 +206,7 @@ INSERT INTO Trainers (name, specialization, experience, contact, assigned_shift)
 ('Yunish Gautam',    'Yoga',                    5, '9876501002', 'EVENING'),
 ('Nishan Karki',     'HIIT',                    4, '9876501003', 'FULL_DAY'),
 ('Tapas Sitaula',    'Zumba',                   5, '9876501004', 'EVENING'),
-('Hridaya',          'Functional Training',     3, '9876501005', 'MORNING');
+('Hridaya Shiwakoti',          'Functional Training',     3, '9876501005', 'MORNING');
 
 INSERT INTO Equipment (name, category, purchase_date, `condition`, quantity) VALUES
 ('Treadmill',          'Cardio',     '2024-01-15', 'GOOD',          8),
