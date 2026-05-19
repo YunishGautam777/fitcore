@@ -27,7 +27,7 @@
     <div class="grid grid-2 mt">
         <div class="card">
             <h3>Our Mission</h3>
-            <p class="text-muted">Make professional fitness coaching accessible to everyone, every day.</p>
+            <p class="text-muted">Make professional level fitness coaching accessible to everyone, every day.</p>
         </div>
         <div class="card">
             <h3>Our Vision</h3>
@@ -35,9 +35,9 @@
         </div>
     </div>
 
-    <h2 class="mt-2">Our Trainer Team</h2>
+    <h2 class="mt-2">Our Trainers Team</h2>
     <div class="grid grid-3 mt">
-        <div class="card"><h3>Aman Khanna</h3><p class="text-muted">Strength &amp; Conditioning -- 6 yrs</p></div>
+        <div class="card"><h3>Shusham Parajuli</h3><p class="text-muted">Strength &amp; Conditioning -- 6 yrs</p></div>
         <div class="card"><h3>Priya Verma</h3><p class="text-muted">Yoga -- 8 yrs</p></div>
         <div class="card"><h3>Rahul Singh</h3><p class="text-muted">HIIT -- 4 yrs</p></div>
         <div class="card"><h3>Neha Sharma</h3><p class="text-muted">Zumba -- 5 yrs</p></div>

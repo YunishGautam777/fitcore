@@ -37,10 +37,11 @@
 
     <h2 class="mt-2">Our Trainers Team</h2>
     <div class="grid grid-3 mt">
-        <div class="card"><h3>Shusham Parajuli</h3><p class="text-muted">Strength &amp; Conditioning -- 6 yrs</p></div>
-        <div class="card"><h3>Priya Verma</h3><p class="text-muted">Yoga -- 8 yrs</p></div>
-        <div class="card"><h3>Rahul Singh</h3><p class="text-muted">HIIT -- 4 yrs</p></div>
-        <div class="card"><h3>Neha Sharma</h3><p class="text-muted">Zumba -- 5 yrs</p></div>
+        <div class="card"><h3>Susham Parajuli</h3><p class="text-muted">Strength &amp; Conditioning -- 6 yrs</p></div>
+        <div class="card"><h3>Yunish Gautam</h3><p class="text-muted">Yoga -- 5 yrs</p></div>
+        <div class="card"><h3>Nishan Karki</h3><p class="text-muted">HIIT -- 4 yrs</p></div>
+        <div class="card"><h3>Tapas Sitaula</h3><p class="text-muted">Zumba -- 5 yrs</p></div>
+        <div class="card"><h3>Hridaya</h3><p class="text-muted">Functional Training -- 3 yrs</p></div>
     </div>
 
     <h2 class="mt-2">Facilities</h2>

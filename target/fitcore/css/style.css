@@ -1,23 +1,21 @@
-/* ============================================================
-   FitCore -- pure CSS theme (no Bootstrap, no frameworks)
-   ============================================================ */
-
 :root {
-    --bg:        #0E0E10;
-    --surface:   #1A1A1F;
-    --surface-2: #25252C;
-    --border:    #2E2E36;
-    --primary:   #FF3D2E;
-    --secondary: #FF8A00;
-    --success:   #2ECC71;
-    --warning:   #F39C12;
-    --danger:    #E74C3C;
-    --text:      #F5F5F7;
-    --muted:     #9B9BA1;
-    --radius:    10px;
-    --shadow:    0 4px 18px rgba(0,0,0,.4);
+    /* CSS Custom Properties for consistent theming */
+    --bg:        #0E0E10;  /* Main background color */
+    --surface:   #1A1A1F;  /* Card/surface background */
+    --surface-2: #25252C;  /* Secondary surface (headers, etc.) */
+    --border:    #2E2E36;  /* Border color */
+    --primary:   #FF3D2E;  /* Primary brand color (red) */
+    --secondary: #FF8A00;  /* Secondary accent color (orange) */
+    --success:   #2ECC71;  /* Success state color (green) */
+    --warning:   #F39C12;  /* Warning state color (yellow) */
+    --danger:    #E74C3C;  /* Danger/error color (red) */
+    --text:      #F5F5F7;  /* Primary text color */
+    --muted:     #ababca;  /* Gray text color */
+    --radius:    10px;     /* Border radius for rounded corners */
+    --shadow:    0 4px 18px rgba(0,0,0,.4);  /* Box shadow */
 }
 
+/* Global reset and base styles */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
@@ -40,7 +38,7 @@ h3 { font-size: 1.3rem; }
 a { color: var(--primary); text-decoration: none; transition: color .2s; }
 a:hover { color: var(--secondary); }
 
-/* ---------- Layout ---------- */
+/* ---------- Layout Utilities ---------- */
 .container   { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 .flex        { display: flex; }
 .flex-between{ display: flex; justify-content: space-between; align-items: center; }
@@ -56,7 +54,8 @@ a:hover { color: var(--secondary); }
 .text-center { text-align: center; }
 .right       { text-align: right; }
 
-/* ---------- Top navigation (public) ---------- */
+
+/* ---------- Top Navigation (Public Pages) ---------- */
 .topnav {
     background: rgba(14,14,16,.85);
     border-bottom: 1px solid var(--border);
@@ -76,7 +75,7 @@ a:hover { color: var(--secondary); }
 }
 .nav-links a:hover { color: var(--primary); }
 
-/* ---------- Buttons ---------- */
+/* ---------- Button Components ---------- */
 .btn {
     display: inline-block;
     padding: .65rem 1.4rem;
@@ -93,7 +92,7 @@ a:hover { color: var(--secondary); }
 .btn-success  { background: var(--success); }
 .btn-secondary{ background: var(--surface-2); color: var(--text); }
 
-/* ---------- Cards ---------- */
+/* ---------- Card Components ---------- */
 .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -106,7 +105,7 @@ a:hover { color: var(--secondary); }
 .stat-card .num { font-size: 2.6rem; font-family: 'Bebas Neue', 'Impact', sans-serif; color: var(--primary); }
 .stat-card .lbl { color: var(--muted); text-transform: uppercase; letter-spacing: 1px; font-size: .8rem; }
 
-/* ---------- Forms ---------- */
+/* ---------- Form Components ---------- */
 .form-group { margin-bottom: 1.1rem; }
 .form-group label { display: block; margin-bottom: .35rem; color: var(--muted); font-size: .9rem; }
 .form-control, input, select, textarea {
@@ -125,7 +124,7 @@ a:hover { color: var(--secondary); }
 }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-/* ---------- Tables ---------- */
+/* ---------- Table Components ---------- */
 .table-wrap { overflow-x: auto; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--border); }
 .table {
     width: 100%; border-collapse: collapse;
@@ -138,7 +137,7 @@ a:hover { color: var(--secondary); }
 .table th { background: var(--surface-2); color: var(--secondary); text-transform: uppercase; font-size: .8rem; letter-spacing: 1px; }
 .table tr:hover td { background: rgba(255,61,46,.04); }
 
-/* ---------- Badges ---------- */
+/* ---------- Badge Components ---------- */
 .badge {
     display: inline-block; padding: .15rem .6rem; border-radius: 999px;
     font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;
@@ -148,12 +147,12 @@ a:hover { color: var(--secondary); }
 .badge-pending  { background: rgba(243,156,18,.18); color: var(--warning); }
 .badge-danger   { background: rgba(231,76,60,.18); color: var(--danger); }
 
-/* ---------- Alerts ---------- */
+/* ---------- Alert Components ---------- */
 .alert { padding: .8rem 1rem; border-radius: var(--radius); margin-bottom: 1rem; }
 .alert-error   { background: rgba(231,76,60,.15); color: var(--danger); border: 1px solid var(--danger); }
 .alert-success { background: rgba(46,204,113,.15); color: var(--success); border: 1px solid var(--success); }
 
-/* ---------- Hero (landing) ---------- */
+/* ---------- Hero Section (Landing Page) ---------- */
 .hero {
     min-height: 80vh;
     background: linear-gradient(135deg, rgba(255,61,46,.15), rgba(255,138,0,.05)),
@@ -173,7 +172,7 @@ a:hover { color: var(--secondary); }
 .features { padding: 4rem 0; }
 .features h2 { text-align: center; margin-bottom: 2rem; }
 
-/* ---------- Auth pages ---------- */
+/* ---------- Authentication Pages ---------- */
 .auth-wrap {
     min-height: 100vh; display: flex; align-items: center; justify-content: center;
     padding: 2rem 1rem;
@@ -182,7 +181,7 @@ a:hover { color: var(--secondary); }
 .auth-card { width: 100%; max-width: 460px; }
 .auth-card h2 { text-align: center; color: var(--primary); }
 
-/* ---------- Admin sidebar layout ---------- */
+/* ---------- Admin Dashboard Layout ---------- */
 .app { display: grid; grid-template-columns: 250px 1fr; min-height: 100vh; }
 .sidebar {
     background: var(--surface);

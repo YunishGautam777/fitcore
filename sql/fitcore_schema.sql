@@ -202,10 +202,11 @@ INSERT INTO MembershipPlans (plan_name, duration, price, features) VALUES
 ('Annual Elite',    365, 14000.00, 'Gym + unlimited classes + 1 PT/month');
 
 INSERT INTO Trainers (name, specialization, experience, contact, assigned_shift) VALUES
-('Aman Khanna',  'Strength & Conditioning', 6, '9876500001', 'MORNING'),
-('Priya Verma',  'Yoga',                    8, '9876500002', 'EVENING'),
-('Rahul Singh',  'HIIT',                    4, '9876500003', 'FULL_DAY'),
-('Neha Sharma',  'Zumba',                   5, '9876500004', 'EVENING');
+('Susham Parajuli',  'Strength & Conditioning', 6, '9876501001', 'MORNING'),
+('Yunish Gautam',    'Yoga',                    5, '9876501002', 'EVENING'),
+('Nishan Karki',     'HIIT',                    4, '9876501003', 'FULL_DAY'),
+('Tapas Sitaula',    'Zumba',                   5, '9876501004', 'EVENING'),
+('Hridaya',          'Functional Training',     3, '9876501005', 'MORNING');
 
 INSERT INTO Equipment (name, category, purchase_date, `condition`, quantity) VALUES
 ('Treadmill',          'Cardio',     '2024-01-15', 'GOOD',          8),
