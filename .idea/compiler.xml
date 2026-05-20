@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Project compiler configuration -->
 <project version="4">
+
+  <!-- Compiler settings -->
   <component name="CompilerConfiguration">
+
+    <!-- Annotation processing configuration -->
     <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
+
+      <!-- Default Maven annotation processor profile -->
+      <profile
+        name="Maven default annotation processors profile"
+        enabled="true">
+
+        <!-- Output directories for generated sources -->
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+
+        <!-- Path resolution setting -->
         <outputRelativeToContentRoot value="true" />
+
+        <!-- Associated module -->
         <module name="fitcore" />
+
       </profile>
+
     </annotationProcessing>
+
   </component>
+
 </project>
