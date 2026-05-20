@@ -53,13 +53,43 @@
 
 </header>
 
+<!-- Hero section -->
 <section class="hero">
+
+    <!-- Hero content container -->
     <div>
-        <h1>FORGE YOUR <span>STRONGEST</span><br>SELF.</h1>
-        <p>FitCore is the all-in-one gym management platform that powers your workouts, trainers, classes, and progress -- in one place.</p>
-        <a href="${pageContext.request.contextPath}/register.jsp" class="btn">Start Training</a>
-        <a href="${pageContext.request.contextPath}/about.jsp" class="btn btn-outline" style="margin-left:.7rem">Learn More</a>
+
+        <!-- Main heading -->
+        <h1>
+            FORGE YOUR <span>STRONGEST</span><br>
+            SELF.
+        </h1>
+
+        <!-- Hero description -->
+        <p>
+            FitCore is the all-in-one gym management platform that powers 
+            your workouts, trainers, classes, and progress -- in one place.
+        </p>
+
+        <!-- Action buttons container -->
+        <div>
+
+            <!-- Registration button -->
+            <a href="${pageContext.request.contextPath}/register.jsp" class="btn">
+                Start Training
+            </a>
+
+            <!-- About page button -->
+            <a href="${pageContext.request.contextPath}/about.jsp"
+               class="btn btn-outline"
+               style="margin-left: .7rem;">
+                Learn More
+            </a>
+
+        </div>
+
     </div>
+
 </section>
 
 <section class="features container">
