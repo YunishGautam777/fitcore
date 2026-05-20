@@ -1,15 +1,17 @@
+<%-- Page: contact.jsp | Purpose: Contact form and gym location info --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact -- FitCore</title>
+    <title>FitCore -- Contact</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
 </head>
 <body>
 
+<%-- ========== HEADER / NAVIGATION ========== --%>
 <header class="topnav">
     <div class="container inner">
         <a class="brand" href="${pageContext.request.contextPath}/">FIT<span>CORE</span></a>
@@ -22,71 +24,82 @@
     </div>
 </header>
 
+<%-- ========== MAIN CONTENT ========== --%>
 <main class="container mt-2">
+
     <h1>Get in Touch</h1>
 
+    <%-- Success message shown after form is submitted --%>
     <c:if test="${param.sent == '1'}">
         <div class="alert alert-success">Thanks! We'll respond soon.</div>
     </c:if>
 
     <div class="grid grid-2 mt">
+
+        <%-- LEFT CARD: Gym address and map --%>
         <div class="card">
             <h3>Visit Us</h3>
             <p class="text-muted">FitCore Gym &middot; 12 Iron Lane, Sector 21, New Delhi</p>
             <p class="text-muted"><strong>Phone:</strong> +91 98765 00000</p>
             <p class="text-muted"><strong>Email:</strong> hello@fitcore.example</p>
 
-            <!-- Embedded Google Maps placeholder -->
+            <%-- Embedded Google Maps --%>
             <iframe
               title="FitCore location"
               src="https://www.google.com/maps?q=New+Delhi&output=embed"
-              width="100%" height="220" style="border:0;border-radius:8px;margin-top:1rem"
-              loading="lazy"></iframe>
+              width="100%"
+              height="220"
+              loading="lazy"
+              style="border:0;border-radius:8px;margin-top:1rem"></iframe>
         </div>
 
-       <!-- Contact card section -->
-<div class="card">
-    
-    <!-- Form heading -->
-    <h3>Send a Message</h3>
+        <%-- RIGHT CARD: Contact form --%>
+        <div class="card">
 
-    <!-- Contact form -->
-    <form method="post" action="${pageContext.request.contextPath}/contact-submit">
-        
-        <!-- Name input field -->
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <h3>Send a Message</h3>
+
+            <%-- Form posts to ContactServlet --%>
+            <form method="post" action="${pageContext.request.contextPath}/contact-submit">
+
+                <%-- Full name --%>
+                <div class="form-group">
+                    <label for="userName">Name</label>
+                    <input type="text" id="userName" name="name" required>
+                </div>
+
+                <%-- Email address --%>
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="email" required>
+                </div>
+
+                <%-- Subject line (optional) --%>
+                <div class="form-group">
+                    <label for="userSubject">Subject</label>
+                    <input type="text" id="userSubject" name="subject">
+                </div>
+
+                <%-- Message body --%>
+                <div class="form-group">
+                    <label for="userMessage">Message</label>
+                    <textarea id="userMessage" name="message" rows="5" required></textarea>
+                </div>
+
+                <%-- Submit button --%>
+                <button type="submit" class="btn">Send</button>
+
+            </form>
+
         </div>
-
-        <!-- Email input field -->
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-
-        <!-- Subject input field (optional) -->
-        <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject">
-        </div>
-
-        <!-- Message textarea -->
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-
-        <!-- Submit button -->
-        <button type="submit" class="btn">
-            Send
-        </button>
-
-    </form>
-
-</div>
+    </div>
 </main>
 
-<footer class="footer"><div class="container"><strong>FitCore Gym</strong> &copy; 2026</div></footer>
+<%-- ========== FOOTER ========== --%>
+<footer class="footer">
+    <div class="container">
+        <strong>FitCore Gym</strong> &copy; 2026
+    </div>
+</footer>
+
 </body>
 </html>
