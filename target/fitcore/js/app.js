@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Search filter for already-loaded tables
+    // 2. Search filter for already-loaded tables.
     document.querySelectorAll('[data-filter]').forEach(input => {
         const tableId = input.getAttribute('data-filter');
         const rows = document.querySelectorAll('#' + tableId + ' tbody tr');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Sidebar toggle on mobile
+    // 3. Sidebar toggle on mobile.
     const tog = document.getElementById('sidebarToggle');
     if (tog) tog.addEventListener('click', () => {
         document.querySelector('.sidebar').classList.toggle('open');
